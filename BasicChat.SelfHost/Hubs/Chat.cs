@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNet.SignalR;
+using System;
 
 namespace BasicChat.SelfHost.Hubs
 {
@@ -6,6 +7,8 @@ namespace BasicChat.SelfHost.Hubs
     {
         public void Send(string message)
         {
+            Console.WriteLine("receive and resend message: " + message);
+
             Clients.All.send(message);
         }
     }

@@ -9,7 +9,7 @@ namespace BasicChat.SelfHost
         {
             string url = "http://localhost:8080";
 
-            using (WebApplication.Start<Startup>(url))
+            using (WebApp.Start<Startup>(url))
             {
                 Console.WriteLine("Server running on {0}", url);
                 Console.ReadLine();

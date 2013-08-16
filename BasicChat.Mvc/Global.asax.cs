@@ -18,15 +18,14 @@ namespace BasicChat.Mvc
         protected void Application_Start()
         {
             AreaRegistration.RegisterAllAreas();
-
-            // The order of this is important
-            RouteTable.Routes.MapHubs();
-
+            
             WebApiConfig.Register(GlobalConfiguration.Configuration);
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
             AuthConfig.RegisterAuth();
         }
+
+
     }
 }

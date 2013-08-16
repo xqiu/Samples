@@ -17,6 +17,7 @@ namespace BasicChatConsole
         private static async Task RunAsync()
         {
             var connection = new HubConnection("http://localhost:44914/");
+            //var connection = new HubConnection("http://localhost:8080/");
             IHubProxy chat = connection.CreateHubProxy("Chat");
 
             chat.On<string>("send", Console.WriteLine);
@@ -29,5 +30,6 @@ namespace BasicChatConsole
                 await chat.Invoke("send", "Console: " + line);
             }
         }
+
     }
 }
