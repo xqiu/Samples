@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNet.SignalR;
+using Microsoft.Owin.Cors;
 using Owin;
 
 namespace OtherSamples
@@ -8,12 +9,8 @@ namespace OtherSamples
         // This method name is important
         public void Configuration(IAppBuilder app)
         {
-            var config = new HubConfiguration
-            {
-                EnableCrossDomain = true
-            };
-
-            app.MapHubs(config);
+            app.UseCors(CorsOptions.AllowAll);
+            app.MapSignalR();
         }
     }
 }

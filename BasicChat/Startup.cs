@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNet.SignalR;
+using Microsoft.Owin.Cors;
 using Owin;
 
 namespace BasicChat
@@ -8,12 +9,8 @@ namespace BasicChat
         // The name *MUST* be Configuration
         public void Configuration(IAppBuilder app)
         {
-            var config = new HubConfiguration
-            {
-                EnableCrossDomain = true
-            };
-
-            app.MapHubs(config);
+            app.UseCors(CorsOptions.AllowAll); //has to put before MapSignalR to enable cross domain usage
+            app.MapSignalR();
         }
     }
 }

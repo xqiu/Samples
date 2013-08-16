@@ -7,7 +7,7 @@ namespace BasicChat.Mvc
         // The name *MUST* be Configuration
         public void Configuration(IAppBuilder app)
         {
-            app.MapHubs();
+            app.MapSignalR();
         }
     }
 }
