@@ -42,7 +42,7 @@
   <ItemGroup>
     <Reference Include="Microsoft.AspNet.SignalR.Core, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Microsoft.AspNet.SignalR.Core.2.0.0-rc1-130802-b134\lib\net45\Microsoft.AspNet.SignalR.Core.dll</HintPath>
+      <HintPath>..\packages\Microsoft.AspNet.SignalR.Core.2.0.0-rc1\lib\net45\Microsoft.AspNet.SignalR.Core.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Microsoft.Owin, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
@@ -69,7 +69,7 @@
       <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
     </Reference>
     <Reference Include="System.Web.Cors">
-      <HintPath>..\packages\Microsoft.AspNet.Cors.5.0.0-rc1-130816\lib\net45\System.Web.Cors.dll</HintPath>
+      <HintPath>..\packages\Microsoft.AspNet.Cors.5.0.0-rc1\lib\net45\System.Web.Cors.dll</HintPath>
     </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
@@ -94,8 +94,8 @@
     <None Include="Scripts\jquery-1.8.3.intellisense.js" />
     <Content Include="Scripts\jquery-1.8.3.js" />
     <Content Include="Scripts\jquery-1.8.3.min.js" />
-    <Content Include="Scripts\jquery.signalR-2.0.0-rc1-130802-b134.js" />
-    <Content Include="Scripts\jquery.signalR-2.0.0-rc1-130802-b134.min.js" />
+    <Content Include="Scripts\jquery.signalR-2.0.0-rc1.js" />
+    <Content Include="Scripts\jquery.signalR-2.0.0-rc1.min.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
